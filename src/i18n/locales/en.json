@@ -1,0 +1,739 @@
+{
+  "common": {
+    "logout": "Logout",
+    "back": "Back",
+    "save": "Save",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "search": "Search...",
+    "filter": "Filter",
+    "detail": "Details →",
+    "name": "Name",
+    "department": "Department",
+    "status": "Status",
+    "operation": "Actions",
+    "period": "Period",
+    "apply": "Applied:",
+    "displayPeriod": "Display Period:",
+    "privacyProtection": "Privacy Protection:",
+    "note": "Note:",
+    "analysis": "Analysis:",
+    "defaultUsername": "Taro Yamada",
+    "departments": {
+      "sales": "Sales Division",
+      "development": "Development",
+      "hr": "HR Department",
+      "generalAffairs": "General Affairs",
+      "marketing": "Marketing",
+      "medicalOffice": "Medical Office",
+      "salesFirst": "Sales Division - First Sales Dept"
+    },
+    "months": {
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November"
+    },
+    "counters": {
+      "people": "{{count}} people",
+      "days": "{{count}} days",
+      "minutes": "{{count}} min"
+    },
+    "dateRange": "~",
+    "positions": {
+      "engineer": "Engineer"
+    },
+    "score": "Score"
+  },
+  "login": {
+    "title": "EAP Platform",
+    "subtitle": "Dynamic Condition Management System",
+    "email": "Email Address",
+    "password": "Password",
+    "loginButton": "Login",
+    "demoAccounts": "Demo Accounts:",
+    "employee": "Employee: employee@company.com",
+    "manager": "Manager: manager@company.com",
+    "hr": "HR: hr@company.com",
+    "physician": "Physician: physician@company.com",
+    "admin": "Admin: admin@company.com",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
+  },
+  "employee": {
+    "greeting": "Hello, {{name}}.",
+    "todayMessage": "Let's have a great day.",
+    "talkToAvatar": "Talk to Avatar",
+    "counselingMode": "Counseling Mode",
+    "counselingLocked": "Please complete the SC questionnaire first to access Counseling Mode",
+    "menu": "Menu",
+    "physicianSupport": "Physician Support",
+    "consentGiven": "Consent Given",
+    "physicianSupportDesc": "The occupational physician can access your data to provide professional support",
+    "pastConversations": "Past Avatar Conversations",
+    "pastConversationsDesc": "View conversation summaries",
+    "counselingHistory": "Counseling History",
+    "counselingHistoryDesc": "Viewable by you only",
+    "scQuestionnaire": "SC Questionnaire",
+    "scAnswered": "Completed",
+    "scUnanswered": "Unanswered questions remain",
+    "answerButton": "Answer",
+    "privacyNotice": "Your conversation content with the AI avatar is not stored verbatim. Psychological analysis results are not shown to you; only abstracted work condition information is shared with your manager and HR.",
+    "scReminderTitle": "Time for SC Questionnaire",
+    "scReminderDesc": "Regular SC questionnaires enable more accurate condition management and support.",
+    "frequency": "Frequency",
+    "lastDate": "Last Completed",
+    "duration": "Duration: About 10-15 minutes",
+    "dataProtection": "Your responses are securely protected",
+    "answerNow": "Answer Now",
+    "answerLater": "Answer Later"
+  },
+  "avatar": {
+    "title": "AI Avatar Dialogue",
+    "normalMode": "Normal Mode",
+    "listening": "Listening...",
+    "analyzing": "Analyzing Work Readiness",
+    "conversationRecord": "Conversation Record",
+    "dragResize": "Drag & Resize",
+    "inputPlaceholder": "Enter message...",
+    "privacyNotice": "Conversation content is not stored verbatim | Analyzing Work Readiness from facial expression, voice, and text",
+    "responses": {
+      "greeting": "Hello! What would you like to talk about today?",
+      "followUp1": "I see. Could you tell me more about that?",
+      "followUp2": "That's interesting. How did you feel about it?",
+      "followUp3": "I understand. Is there anything else on your mind?",
+      "followUp4": "I see. What do you think about that?"
+    }
+  },
+  "counseling": {
+    "title": "Counseling Mode",
+    "subtitle": "Feel free to share",
+    "listening": "Listening...",
+    "record": "Counseling Record",
+    "dragResize": "Drag & Resize",
+    "inputPlaceholder": "Take your time...",
+    "privacyNotice": "Counseling content is not stored verbatim | Not used for Work Readiness analysis",
+    "responses": {
+      "welcome": "Welcome to Counseling Mode. This is a safe space to talk. Take a deep breath and relax. What would you like to discuss today?",
+      "explore": "Let's explore that feeling a bit more. In what specific situations did you feel that way?",
+      "insight": "That's an important insight. What's the basis for that thought?",
+      "reframe": "I understand. If you were to look at it differently, what other perspectives could you consider?",
+      "validate": "I see. What you felt in that situation is a very natural response.",
+      "learn": "Is there something you can learn from that experience?"
+    }
+  },
+  "questionnaire": {
+    "title": "SC Questionnaire",
+    "page": "Page {{current}} / {{total}}",
+    "instructions": "For each question, recall your situation over the past month and select the most applicable answer.",
+    "completed": "Questionnaire Completed",
+    "thankYou": "Thank you for your cooperation.",
+    "importantNotice": "Important Notice About Your Responses",
+    "notice1": "Your responses are not stored verbatim",
+    "notice2": "Only statistical analysis is performed; individual responses are abstracted",
+    "notice3": "Specific scores are not displayed to you",
+    "notice4": "Results are used for organizational improvement",
+    "privacyNotice": "Survey results are used to improve work conditions and workplace environment. They are never disclosed in a way that identifies individuals.",
+    "counselingUnlocked": "Counseling Mode is now available!",
+    "backToHome": "Back to Home",
+    "previous": "← Back",
+    "next": "Next →",
+    "complete": "Complete",
+    "answered": "{{count}} / {{total}} questions answered",
+    "rawNotSaved": "Responses are not stored verbatim. Only statistical analysis is performed, and no scores are displayed to you.",
+    "categories": {
+      "workload": "Workload",
+      "control": "Work Control",
+      "support": "Workplace Support",
+      "environment": "Work Environment",
+      "stress": "Stress Response",
+      "satisfaction": "Satisfaction"
+    },
+    "questions": {
+      "q1": "I have a very large amount of work to do",
+      "q2": "I cannot finish work within working hours",
+      "q3": "I have to work very hard",
+      "q4": "I can work at my own pace",
+      "q5": "I can decide the order and method of my work",
+      "q6": "My supervisor supports subordinates to demonstrate their abilities",
+      "q7": "My colleagues help me with my work",
+      "q8": "The workplace atmosphere is friendly",
+      "q9": "I feel energetic",
+      "q10": "I am full of energy",
+      "q11": "I feel irritated",
+      "q12": "I feel anxious",
+      "q13": "I feel depressed",
+      "q14": "I cannot sleep well",
+      "q15": "I am satisfied with my work",
+      "q16": "I am satisfied with my home life"
+    },
+    "options": {
+      "yes": "Yes",
+      "somewhatYes": "Somewhat yes",
+      "somewhatNo": "Somewhat no",
+      "no": "No"
+    }
+  },
+  "history": {
+    "title": "Past Avatar Conversations",
+    "subtitle": "View conversation summaries",
+    "periodFilter": "Period Filter",
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "custom": "Custom Period",
+    "selectDate": "Select Date",
+    "selectWeek": "Select Week",
+    "selectMonth": "Select Month",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "daysAgo": "{{count}} days ago",
+    "thisWeek": "This Week",
+    "lastWeek": "Last Week",
+    "weeksAgo": "{{count}} weeks ago",
+    "thisMonth": "This Month",
+    "lastMonth": "Last Month",
+    "monthsAgo": "{{count}} months ago",
+    "conversationCount": "Conversation History ({{count}} entries)",
+    "noHistory": "No Conversation History",
+    "noHistoryDesc": "No conversations recorded for the selected period",
+    "privacyNotice": "Only conversation summaries are displayed. Original conversations are not stored; only abstracted summary information is recorded."
+  },
+  "manager": {
+    "dashboard": "Team Dashboard",
+    "department": "Sales Division - First Sales Department",
+    "dataNotice": "Only 5-level condition ratings and trends are displayed (psychological details hidden)",
+    "teamSize": "Team Size",
+    "good": "Good",
+    "needsAttention": "Needs Attention",
+    "searchPlaceholder": "Search members...",
+    "sortBy": "Sort by",
+    "sortName": "Name",
+    "sortCondition": "Condition",
+    "sortTrend": "Trend",
+    "tags": {
+      "stable": "Stable",
+      "good": "Good",
+      "attention": "Attention",
+      "declining": "Declining"
+    }
+  },
+  "managerIndividual": {
+    "title": "Individual Details",
+    "dataNotice": "Only condition indicators and abstracted work-related data are displayed (psychological/counseling information hidden)",
+    "infoNotice": "Only 5-level condition trends and abstracted factors are displayed. Psychological details and raw emotional data are not shown.",
+    "todayCondition": "Today's Condition",
+    "conditionFactors": "Condition Factors (Abstracted)",
+    "dailyTrend": "Daily Condition Trend (5 Levels)",
+    "weeklyTrend": "Weekly Trend",
+    "conditionTrend": "Condition Trend (5 Levels)",
+    "workFactors": "Work Factors (Abstracted)",
+    "comparedToLastWeek": "vs Last Week",
+    "comparedToYesterday": "vs Yesterday",
+    "noChange": "No Change",
+    "hiddenNotice": "Internal evaluation values (0-100) are hidden. Only the 5-level abstracted values are displayed.",
+    "factorNotice": "These are abstracted work-related indicators. Personal psychological information is not included.",
+    "trendAnalysis": "A declining trend has been observed over the past 3 weeks. Consider checking for changes in workload or environment.",
+    "recommendedActions": "Recommended Management Actions",
+    "action1": "Consider scheduling a 1-on-1 meeting",
+    "action2": "Recommended to provide an opportunity to discuss work priorities",
+    "action3": "Support consultation with HR or occupational physician as needed",
+    "conditions": {
+      "excellent": "Excellent",
+      "good": "Good",
+      "normal": "Normal",
+      "low": "Somewhat Low",
+      "bad": "Low"
+    },
+    "factors": {
+      "workloadResponse": "Workload Response",
+      "attention": "Attention Resources",
+      "activity": "Activity Level",
+      "responsiveness": "Responsiveness"
+    },
+    "levels": {
+      "high": "Somewhat High",
+      "stable": "Stable",
+      "declining": "Declining",
+      "normal": "Normal"
+    },
+    "weeks": {
+      "week1": "Week 1",
+      "week2": "Week 2",
+      "week3": "Week 3",
+      "thisWeek": "This Week"
+    }
+  },
+  "hr": {
+    "dashboard": "HR Dashboard",
+    "wrAnalysis": "Work Readiness (WR) Analysis",
+    "totalEmployees": "Total Employees",
+    "avgWR": "Average WR",
+    "improving": "Improving",
+    "needsAttention": "Needs Attention",
+    "overview": "Overview",
+    "departmentAnalysis": "Department Analysis",
+    "individuals": "At-Risk",
+    "companyWRTrend": "Company-Wide Work Readiness Trend",
+    "lowPerformers": "At-Risk List (WR < 50)",
+    "workReadiness": "Work Readiness",
+    "trend": "Trend",
+    "dateRange": {
+      "1month": "Last 1 Month",
+      "3months": "Last 3 Months",
+      "6months": "Last 6 Months",
+      "1year": "Last 1 Year",
+      "all": "All Time"
+    },
+    "departments": {
+      "all": "All Departments",
+      "sales": "Sales Division",
+      "development": "Development",
+      "hr": "HR",
+      "general": "General Affairs",
+      "marketing": "Marketing"
+    },
+    "runAnalysis": "Run Analysis",
+    "departmentWRComparison": "Department Work Readiness Comparison",
+    "headcount": "{{count}} people",
+    "declining": "Declining",
+    "improved": "Improved",
+    "individualSearch": "Individual Search",
+    "comingSoon": "Individual detail navigation (Coming Soon)"
+  },
+  "hrIndividual": {
+    "permission": "You can view Work Readiness details (0-100), SC category summaries, and abstracted behavioral data. Raw text and psychological details are not displayed.",
+    "currentWR": "Current Work Readiness",
+    "status": {
+      "good": "Good",
+      "caution": "Caution",
+      "action": "Action Required"
+    },
+    "trend": "Trend",
+    "weekAgo": "1 Week Ago",
+    "monthAgo": "1 Month Ago",
+    "change": "Change",
+    "alerts": "Alerts",
+    "rapidDecline": "Rapid Decline",
+    "continuousLow": "Continuous Low",
+    "wrTrend": "Work Readiness Trend (0-100)",
+    "analysisNote": "A 30-point decline has been observed over the past 2 months. Early intervention is recommended.",
+    "scCategorySummary": "SC Category Summary",
+    "slackBehavior": "Slack Behavior Trends (Abstracted)",
+    "slackPrivacy": "Original Slack messages are not stored or displayed. Only extracted text features and sentiment analysis results are shown in abstracted form.",
+    "sentimentAnalysis": "Sentiment Analysis (Past 2 Weeks)",
+    "positive": "Positive",
+    "neutral": "Neutral",
+    "negative": "Negative",
+    "sentimentNote": "Sentiment estimated by AI natural language processing. Negative ratio is higher than usual.",
+    "emotionIndicators": "Emotion Indicators (Text Analysis)",
+    "increasing": "Increasing",
+    "decreasing": "Decreasing",
+    "stable": "Stable",
+    "emotionNote": "Emotional trends estimated from vocabulary patterns and context. Anxiety and fatigue indicators are elevated.",
+    "textFeatures": "Text Features",
+    "behaviorMetrics": "Behavior Metrics",
+    "recommendedActions": "Recommended Actions",
+    "physicianRecommendations": "Occupational Physician Recommendations",
+    "consentGiven": "Employee Consent Given",
+    "lastUpdated": "Last Updated:",
+    "medicalFindings": "Medical Findings",
+    "recommendations": "Recommendations",
+    "hrNote": "Physician recommendations are medical advice. Specific HR measures should be discussed and implemented by the employee, supervisor, and HR.",
+    "urgentAction": "Urgent Action Recommended",
+    "mediumTermMeasures": "Medium-Term Measures",
+    "urgentActions": {
+      "action1": "Urgently schedule 1-on-1 meeting with direct supervisor",
+      "action2": "Consider arranging occupational physician consultation (employee consent required)",
+      "action3": "Review and redistribute workload"
+    },
+    "mediumActions": {
+      "action1": "Strengthen team support structure",
+      "action2": "Provide skill development training opportunities",
+      "action3": "Schedule regular follow-up meetings"
+    },
+    "emotions": {
+      "anxiety": "Anxiety",
+      "fatigue": "Fatigue",
+      "impatience": "Impatience",
+      "isolation": "Isolation"
+    },
+    "metrics": {
+      "responseSpeed": "Response Speed",
+      "messageLength": "Message Length",
+      "postFrequency": "Post Frequency",
+      "reactions": "Reactions",
+      "negativeExpressions": "Negative Expression Frequency",
+      "questionRatio": "Question Ratio",
+      "immediateResponse": "Immediate Response Rate",
+      "lateNightPosts": "Late Night Posts"
+    },
+    "metricStatus": {
+      "declining": "Declining",
+      "decreasing": "Decreasing",
+      "stable": "Stable",
+      "increasing": "Increasing",
+      "normal": "Normal"
+    },
+    "features": {
+      "negativeExpressions": "Negative Expression Frequency",
+      "questionRatio": "Question Ratio",
+      "immediateResponseRate": "Immediate Response Rate",
+      "lateNightPosts": "Late Night Posts"
+    },
+    "featureValues": {
+      "increasing": "Increasing",
+      "normal": "Normal Level",
+      "declining": "Declining"
+    }
+  },
+  "physician": {
+    "title": "Occupational Physician View",
+    "subtitle": "Only consent-given data viewable",
+    "confidentiality": "Medical Confidentiality and Consent Management",
+    "confidentialityDesc": "Information displayed on this screen is only viewable with explicit consent from the employee. Counseling summaries, Work Readiness trends, and SC categories are shown, but original conversations and detailed psychological information are not displayed.",
+    "consentedEmployees": "Consented Employees",
+    "highRisk": "High Risk",
+    "mediumRisk": "Medium Risk",
+    "lowRisk": "Low Risk",
+    "consentedList": "Consented Employee List",
+    "riskLevel": "Risk Level",
+    "showAll": "Show All",
+    "highRiskOnly": "High Risk Only",
+    "mediumRiskOnly": "Medium Risk Only",
+    "lowRiskOnly": "Low Risk Only",
+    "wrTrend": "Work Readiness Trend",
+    "counselingSummary": "Counseling Summary",
+    "sessionTypes": {
+      "cbt": "CBT",
+      "normal": "Normal"
+    },
+    "scCategorySummary": "SC Category Summary",
+    "scCategories": {
+      "workload": "Workload Factor",
+      "control": "Work Control Factor",
+      "supervisorSupport": "Supervisor Support Factor",
+      "relationships": "Interpersonal Factor"
+    },
+    "scLevels": {
+      "high": "High",
+      "somewhatLow": "Somewhat Low",
+      "good": "Good",
+      "medium": "Medium"
+    },
+    "medicalNotes": "Medical Findings & Recommendations",
+    "clickToEdit": "Click to edit",
+    "findings": "Findings",
+    "findingsPlaceholder": "Enter medical findings...",
+    "recommendationsPlaceholder": "Enter recommendations...\nSeparate each item with a new line",
+    "lastEdited": "Last Edited:",
+    "selectEmployee": "Select an employee from the list",
+    "consentDate": "Consent Date:",
+    "expiryDate": "Expiry Date:",
+    "currentWR": "Current WR"
+  },
+  "physicianConsent": {
+    "title": "Occupational Physician Support Guidance",
+    "description": "Your Work Readiness score is lower than usual. Please consent to data viewing to receive professional support from the occupational physician.",
+    "alertMessage": "Your Work Readiness score is <strong>{{score}}</strong>, which is lower than usual.",
+    "supportOffer": "Professional Support Offer",
+    "supportDesc1": "By receiving more specialized support from the occupational physician, we can help improve your health and work condition.",
+    "supportDesc2": "By allowing the occupational physician to access your detailed data, they can provide more appropriate advice and support.",
+    "sharedData": "About Shared Data",
+    "sharedDataItems": {
+      "wrTrend": "Work Readiness score trends",
+      "conditionDetails": "Condition indicator details",
+      "scResults": "SC questionnaire results",
+      "conversationSummary": "Avatar conversation summaries"
+    },
+    "rawNotIncluded": "Original conversations are not included",
+    "privacyTitle": "About Privacy Protection:",
+    "privacyItems": {
+      "confidentiality": "The occupational physician has confidentiality obligations and information is strictly managed",
+      "noSharing": "Information viewed by the physician is not shared with supervisors or HR",
+      "revocable": "You can revoke consent at any time",
+      "noDisadvantage": "You will not suffer any disadvantage by not consenting"
+    },
+    "confirmQuestion": "Do you consent to the occupational physician viewing your data?",
+    "decline": "Not Now",
+    "consent": "Consent and Receive Physician Support"
+  },
+  "admin": {
+    "title": "System Administration",
+    "subtitle": "CS/Admin Use",
+    "stats": {
+      "totalAccounts": "Total Accounts",
+      "active": "Active",
+      "dataCapacity": "Data Capacity",
+      "systemStatus": "System Status",
+      "normal": "Normal"
+    },
+    "tabs": {
+      "accounts": "Account Management",
+      "permissions": "Permission Management",
+      "dataRetention": "Data Retention Status",
+      "scTemplate": "SC Template",
+      "physicianConsent": "Physician Consent Settings"
+    },
+    "accounts": {
+      "list": "Account List",
+      "new": "New Account",
+      "email": "Email Address",
+      "role": "Role",
+      "roles": {
+        "employee": "Employee",
+        "manager": "Manager",
+        "hr": "HR",
+        "physician": "Physician",
+        "admin": "Admin"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      }
+    },
+    "permissions": {
+      "title": "Role-Based Permission Settings",
+      "features": {
+        "avatarDialogue": "AI Avatar Dialogue",
+        "counselingMode": "Counseling Mode",
+        "scQuestionnaire": "SC Questionnaire Response",
+        "ownScore": "View Own Score (Hidden)",
+        "teamCondition": "View Team Member 5-Level Condition",
+        "trendInfo": "View Trend Information",
+        "psychologicalInfo": "Psychological Info/Emotion Labels (Hidden)",
+        "wrDetailed": "View Work Readiness (0-100)",
+        "scCategorySummary": "View SC Category Summary",
+        "behaviorData": "View Abstracted Behavior Data",
+        "rawPsychological": "Raw Text/Psychological Details (Hidden)",
+        "counselingSummaryConsent": "View Counseling Summary (With Consent)",
+        "wrTrendConsent": "View Work Readiness Trend (With Consent)",
+        "scCategoryConsent": "View SC Category Summary (With Consent)",
+        "rawHidden": "Raw Text Hidden"
+      }
+    },
+    "dataRetention": {
+      "retained": "Retained Data",
+      "notRetained": "Not Stored Data",
+      "retainedItems": {
+        "wrScore": "Work Readiness Score (Value Only)",
+        "scAggregated": "SC Questionnaire Aggregated Results (By Category)",
+        "behaviorData": "Abstracted Behavior Data",
+        "counselingSummary": "Counseling Summary (Self/Physician Only)"
+      },
+      "notRetainedItems": {
+        "avatarRaw": "AI Avatar Dialogue Raw Text",
+        "scRaw": "SC Questionnaire Individual Response Raw Text",
+        "psychologicalDetail": "Detailed Psychological Analysis During Counseling",
+        "voiceData": "Voice Data"
+      },
+      "retentionPeriod": "Data Retention Period",
+      "periods": {
+        "12months": "12 Months",
+        "24months": "24 Months",
+        "6monthsUserDeletable": "6 Months (User Deletable)"
+      },
+      "storageUsage": "Storage Usage",
+      "storageTypes": {
+        "wrData": "Work Readiness Data",
+        "scData": "SC Data",
+        "summaryData": "Summary Data"
+      }
+    },
+    "scTemplate": {
+      "useTemplate": "Template in Use",
+      "templates": {
+        "standard": "Standard (57 Questions)",
+        "simple": "Simple (23 Questions)",
+        "custom": "Custom"
+      },
+      "frequency": "Frequency",
+      "frequencies": {
+        "none": "Not Implemented",
+        "weekly": "Weekly",
+        "biweekly": "Biweekly",
+        "monthly": "Monthly",
+        "quarterly": "Quarterly"
+      },
+      "currentSettings": "Current Template Settings",
+      "template": "Template",
+      "nextDate": "Next Implementation Date",
+      "saveSettings": "Save Settings"
+    },
+    "physicianConsent": {
+      "title": "Physician Consent Dialog Settings",
+      "thresholdTitle": "Work Readiness Threshold Setting",
+      "thresholdDesc": "When an employee's Work Readiness score falls below this value, the physician support guidance dialog will be displayed.",
+      "thresholdLabel": "Threshold (0-100)",
+      "belowThreshold": "Display when below",
+      "currentSetting": "Current Setting",
+      "redisplayTitle": "Redisplay Period Setting",
+      "redisplayDesc": "Set the period before the dialog is displayed again after an employee selects 'Not Now'.",
+      "redisplayDays": "Days until redisplay",
+      "daysLater": "days later",
+      "examples": "Example Settings and Recommended Values",
+      "standard": "Standard Setting",
+      "standardDesc": "For general companies",
+      "standardValue": "Threshold: 50 / Redisplay: 7 days",
+      "proactive": "Proactive Support",
+      "proactiveDesc": "Emphasizing early intervention",
+      "proactiveValue": "Threshold: 60 / Redisplay: 3 days",
+      "conservative": "Conservative Support",
+      "conservativeDesc": "Respecting employee autonomy",
+      "conservativeValue": "Threshold: 40 / Redisplay: 14 days",
+      "summary": "Current Settings Summary",
+      "displayCondition": "Dialog Display Condition",
+      "wrBelow": "Work Readiness < {{value}}",
+      "redisplayTiming": "Redisplay Timing",
+      "afterDecline": "{{days}} days after decline",
+      "lastUpdated": "Last Updated",
+      "resetDefault": "Reset to Default"
+    }
+  },
+  "scGroupAnalysis": {
+    "title": "SC Group Analysis",
+    "subtitle": "Organization-Wide Stress Check Analysis",
+    "notice": "This data is aggregated in a way that does not identify individuals. Please use it as reference data for organizational improvement and workplace environment enhancement.",
+    "tabs": {
+      "comparison": "Department Comparison",
+      "trends": "Trend Analysis",
+      "initiatives": "Initiative Effectiveness"
+    },
+    "comparison": {
+      "radarTitle": "Department Category Scores (Radar Chart)",
+      "barTitle": "Category Comparison by Department (Bar Chart)",
+      "highRiskDepts": "High Risk Departments",
+      "goodDepts": "Good Departments",
+      "status": {
+        "attention": "Attention Required",
+        "caution": "Caution",
+        "good": "Good",
+        "stable": "Stable"
+      },
+      "deptDescriptions": {
+        "salesHighLoad": "High workload with high stress response tendency",
+        "devModerateLoad": "Moderately high workload and stress response",
+        "hrBalanced": "Generally well-balanced state",
+        "generalSupport": "Strong supervisor and colleague support"
+      }
+    },
+    "trends": {
+      "monthlyTitle": "Monthly Trend (Company Average)",
+      "categories": {
+        "workload": "Workload",
+        "supervisorSupport": "Supervisor Support",
+        "stressResponse": "Stress Response"
+      },
+      "monthChange": "{{change}}pt vs last month",
+      "statusLabels": {
+        "somewhatHigh": "Somewhat high level",
+        "improving": "Improving trend",
+        "needsAttention": "Needs attention"
+      }
+    },
+    "initiatives": {
+      "title": "WR Change Before/After Initiatives",
+      "before": "Before",
+      "after": "After",
+      "items": {
+        "oneOnOne": "1-on-1 Enhancement",
+        "flextime": "Flextime Introduction",
+        "training": "Training Program",
+        "mentor": "Mentor System"
+      },
+      "beforeWR": "Before WR",
+      "afterWR": "After WR",
+      "change": "Change",
+      "effective": "Effective: Recommend continued implementation",
+      "nextActions": "Recommended Next Actions",
+      "actions": {
+        "expand": "Expand Effective Initiatives",
+        "expandDesc": "Consider expanding mentor system and training programs to other departments",
+        "additional": "Consider Additional Initiatives",
+        "additionalDesc": "Review resource allocation for departments with high workload",
+        "monitor": "Continuous Monitoring",
+        "monitorDesc": "Continue SC implementation and effectiveness measurement every 3 months"
+      }
+    }
+  },
+  "mockData": {
+    "conversations": {
+      "conv1Summary": "Consultation about project progress. Discussed prioritizing new tasks and schedule adjustments.",
+      "conv1Mood": "Normal",
+      "conv1Tags": ["Work", "Project Management"],
+      "conv2Summary": "About communication with team members. Explored approaches for smooth collaboration.",
+      "conv2Mood": "Good",
+      "conv2Tags": ["Communication", "Teamwork"],
+      "conv3Summary": "Reflection on this week's tasks. Organized achievements and areas for improvement.",
+      "conv3Mood": "Normal",
+      "conv3Tags": ["Reflection", "Work"],
+      "conv4Summary": "Discussion about long-term career plans. Considered skill development directions.",
+      "conv4Mood": "Positive",
+      "conv4Tags": ["Career", "Self-Development"],
+      "conv5Summary": "About returning to work after vacation. Organized to approach with a refreshed mindset.",
+      "conv5Mood": "Good",
+      "conv5Tags": ["Vacation", "Work-Life Balance"],
+      "conv6Summary": "Reflection on quarterly goal achievement status. Planned next steps.",
+      "conv6Mood": "Normal",
+      "conv6Tags": ["Goal Setting", "Reflection"]
+    },
+    "medicalFindings": "Consider possibility of adjustment disorder. Continuous monitoring is required.",
+    "recommendations": {
+      "rec1": "Schedule follow-up consultation in 2 weeks",
+      "rec2": "Consider referral to specialist if needed",
+      "rec3": "Coordinate with HR and supervisor regarding workload adjustment",
+      "rec4": "Provide sleep hygiene guidance"
+    },
+    "counselingSessions": {
+      "session1Date": "2024/11/15 Session",
+      "session1Summary": "Addressed cognitive distortions related to workload. Noticed the thought pattern of 'must be perfect' and discussed realistic goal setting.",
+      "session2Date": "2024/11/10 Session",
+      "session2Summary": "Consulted about decreased sleep quality and concentration issues. Discussed reviewing lifestyle rhythm and stress coping methods."
+    },
+    "slackBehavior": {
+      "responseSpeedDesc": "Average response time extended from 2 hours to 4 hours",
+      "messageLengthDesc": "Average character count decreased by 50%",
+      "postFrequencyDesc": "Daily average decreased from 15 to 8 posts",
+      "reactionsDesc": "Emoji usage is at normal level",
+      "negativeExpressionsDesc": "Expressions like 'difficult' and 'tough' increased 1.5x",
+      "questionRatioDesc": "Question and confirmation frequency is in normal range",
+      "immediateResponseDesc": "Immediate response rate decreased from 60% to 35%",
+      "lateNightPostsDesc": "Posts after 10pm increased 2x"
+    },
+    "tags": {
+      "work": "Work",
+      "projectManagement": "Project Management",
+      "communication": "Communication",
+      "teamwork": "Teamwork",
+      "reflection": "Reflection",
+      "career": "Career",
+      "selfDevelopment": "Self-Development",
+      "vacation": "Vacation",
+      "workLifeBalance": "Work-Life Balance",
+      "goalSetting": "Goal Setting"
+    },
+    "moods": {
+      "normal": "Normal",
+      "good": "Good",
+      "positive": "Positive"
+    }
+  },
+  "scCategories": {
+    "workplaceEnvironment": "Workplace Environment Factor",
+    "interpersonalRelations": "Interpersonal Relations Factor",
+    "workBurden": "Work Burden Factor",
+    "workControl": "Work Control Factor",
+    "supervisorSupport": "Supervisor Support Factor",
+    "colleagueSupport": "Colleague Support"
+  },
+  "stressFactors": {
+    "workBurden": "Work Burden",
+    "workControl": "Work Control",
+    "supervisorSupport": "Supervisor Support",
+    "colleagueSupport": "Colleague Support",
+    "stressResponse": "Stress Response"
+  }
+}

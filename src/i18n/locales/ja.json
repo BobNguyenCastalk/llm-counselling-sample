@@ -1,0 +1,739 @@
+{
+  "common": {
+    "logout": "ログアウト",
+    "back": "戻る",
+    "save": "保存",
+    "edit": "編集",
+    "cancel": "キャンセル",
+    "search": "検索...",
+    "filter": "フィルター",
+    "detail": "詳細 →",
+    "name": "名前",
+    "department": "部署",
+    "status": "状態",
+    "operation": "操作",
+    "period": "期間",
+    "apply": "適用中:",
+    "displayPeriod": "表示期間:",
+    "privacyProtection": "プライバシー保護:",
+    "note": "注意:",
+    "analysis": "分析:",
+    "defaultUsername": "山田太郎",
+    "departments": {
+      "sales": "営業本部",
+      "development": "開発部",
+      "hr": "人事部",
+      "generalAffairs": "総務部",
+      "marketing": "マーケティング",
+      "medicalOffice": "医務室",
+      "salesFirst": "営業本部 第一営業部"
+    },
+    "months": {
+      "july": "7月",
+      "august": "8月",
+      "september": "9月",
+      "october": "10月",
+      "november": "11月"
+    },
+    "counters": {
+      "people": "{{count}}名",
+      "days": "{{count}}日",
+      "minutes": "{{count}}分"
+    },
+    "dateRange": "〜",
+    "positions": {
+      "engineer": "エンジニア"
+    },
+    "score": "スコア"
+  },
+  "login": {
+    "title": "EAP プラットフォーム",
+    "subtitle": "動態コンディション管理システム",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "loginButton": "ログイン",
+    "demoAccounts": "デモ用アカウント:",
+    "employee": "従業員: employee@company.com",
+    "manager": "上司: manager@company.com",
+    "hr": "人事: hr@company.com",
+    "physician": "産業医: physician@company.com",
+    "admin": "管理者: admin@company.com",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー"
+  },
+  "employee": {
+    "greeting": "こんにちは {{name}}さん。",
+    "todayMessage": "今日もよろしくお願いします。",
+    "talkToAvatar": "話しかける",
+    "counselingMode": "カウンセリングモード",
+    "counselingLocked": "カウンセリングモードを利用するには、まずSC類似設問に回答してください",
+    "menu": "メニュー",
+    "physicianSupport": "産業医サポート",
+    "consentGiven": "同意済み",
+    "physicianSupportDesc": "産業医があなたのデータにアクセスし、専門的なサポートを提供できます",
+    "pastConversations": "過去のアバター会話",
+    "pastConversationsDesc": "会話の要約を確認できます",
+    "counselingHistory": "カウンセリング履歴",
+    "counselingHistoryDesc": "あなたのみ閲覧可能です",
+    "scQuestionnaire": "SC類似設問",
+    "scAnswered": "回答済み",
+    "scUnanswered": "未回答の設問があります",
+    "answerButton": "回答する",
+    "privacyNotice": "AIアバターとの会話内容は原文保存されません。心理的な分析結果もあなた自身には表示されず、業務コンディションの抽象化された情報のみが上司・人事に共有されます。",
+    "scReminderTitle": "SC類似設問の実施時期です",
+    "scReminderDesc": "定期的なSC類似設問の実施により、より正確なコンディション管理とサポートを提供できます。",
+    "frequency": "実施頻度",
+    "lastDate": "前回実施日",
+    "duration": "所要時間: 約10〜15分",
+    "dataProtection": "回答内容は安全に保護されます",
+    "answerNow": "今すぐ回答する",
+    "answerLater": "後で回答する"
+  },
+  "avatar": {
+    "title": "AIアバター対話",
+    "normalMode": "通常モード",
+    "listening": "音声認識中...",
+    "analyzing": "Work Readiness解析中",
+    "conversationRecord": "会話の記録",
+    "dragResize": "ドラッグ・リサイズ可能",
+    "inputPlaceholder": "メッセージを入力...",
+    "privacyNotice": "会話内容は原文保存されません｜表情・音声・テキストからWork Readinessを解析",
+    "responses": {
+      "greeting": "こんにちは！今日はどんなことをお話ししましょうか？",
+      "followUp1": "なるほど、そうなんですね。もう少し詳しく教えていただけますか？",
+      "followUp2": "それは興味深いですね。どのように感じましたか？",
+      "followUp3": "わかりました。他に何か気になることはありますか？",
+      "followUp4": "そうですか。それについてどう思われますか？"
+    }
+  },
+  "counseling": {
+    "title": "カウンセリングモード",
+    "subtitle": "安心してお話しください",
+    "listening": "音声認識中...",
+    "record": "カウンセリング記録",
+    "dragResize": "ドラッグ・リサイズ可能",
+    "inputPlaceholder": "ゆっくりとお話しください...",
+    "privacyNotice": "カウンセリング内容は原文保存されません｜Work Readiness解析には使用されません",
+    "responses": {
+      "welcome": "カウンセリングモードへようこそ。ここは安心してお話しできる場所です。深呼吸をして、リラックスしてください。今日はどんなことをお話ししましょうか？",
+      "explore": "その気持ちをもう少し掘り下げてみましょう。具体的にどんな場面でそう感じましたか？",
+      "insight": "それは大切な気づきですね。その考えの根拠は何でしょうか？",
+      "reframe": "理解しました。別の見方をするとしたら、どんな考え方ができそうですか？",
+      "validate": "そうですか。その状況であなたが感じたことは、とても自然な反応だと思います。",
+      "learn": "その経験から、何か学べることはありそうですか？"
+    }
+  },
+  "questionnaire": {
+    "title": "SC類似設問",
+    "page": "ページ {{current}} / {{total}}",
+    "instructions": "各質問について、最近1ヶ月の状況を思い出して、最もあてはまるものを選んでください。",
+    "completed": "回答が完了しました",
+    "thankYou": "ご協力ありがとうございました。",
+    "importantNotice": "回答についての重要なお知らせ",
+    "notice1": "回答内容は原文のまま保存されません",
+    "notice2": "統計的な分析のみが行われ、個別の回答は抽象化されます",
+    "notice3": "あなた自身には具体的なスコアは表示されません",
+    "notice4": "組織全体の改善のために活用されます",
+    "privacyNotice": "この調査結果は、業務コンディションの改善と職場環境の向上のために活用されます。個人を特定できる形での開示は一切行われません。",
+    "counselingUnlocked": "これでカウンセリングモードが利用可能になりました！",
+    "backToHome": "ホームに戻る",
+    "previous": "← 戻る",
+    "next": "次へ →",
+    "complete": "完了",
+    "answered": "{{count}} / {{total}} 問回答済み",
+    "rawNotSaved": "回答内容は原文保存されません。統計分析のみが行われ、あなた個人にスコアは表示されません。",
+    "categories": {
+      "workload": "仕事の負担",
+      "control": "仕事のコントロール",
+      "support": "職場の支援",
+      "environment": "職場環境",
+      "stress": "ストレス反応",
+      "satisfaction": "満足度"
+    },
+    "questions": {
+      "q1": "非常にたくさんの仕事をしなければならない",
+      "q2": "時間内に仕事が処理しきれない",
+      "q3": "一生懸命働かなければならない",
+      "q4": "自分のペースで仕事ができる",
+      "q5": "自分で仕事の順番・やり方を決めることができる",
+      "q6": "上司は部下が能力を発揮できるように支援してくれる",
+      "q7": "職場の同僚は、私の仕事を手伝ってくれる",
+      "q8": "職場の雰囲気は友好的である",
+      "q9": "活気がわいてくる",
+      "q10": "元気がいっぱいだ",
+      "q11": "イライラしている",
+      "q12": "不安だ",
+      "q13": "ゆううつだ",
+      "q14": "よく眠れない",
+      "q15": "仕事に満足だ",
+      "q16": "家庭生活に満足だ"
+    },
+    "options": {
+      "yes": "そうだ",
+      "somewhatYes": "まあそうだ",
+      "somewhatNo": "ややちがう",
+      "no": "ちがう"
+    }
+  },
+  "history": {
+    "title": "過去のアバター会話",
+    "subtitle": "会話の要約を確認できます",
+    "periodFilter": "期間フィルター",
+    "daily": "日別",
+    "weekly": "週別",
+    "monthly": "月別",
+    "custom": "カスタム期間",
+    "selectDate": "日付を選択",
+    "selectWeek": "週を選択",
+    "selectMonth": "月を選択",
+    "startDate": "開始日",
+    "endDate": "終了日",
+    "today": "今日",
+    "yesterday": "昨日",
+    "daysAgo": "{{count}}日前",
+    "thisWeek": "今週",
+    "lastWeek": "先週",
+    "weeksAgo": "{{count}}週間前",
+    "thisMonth": "今月",
+    "lastMonth": "先月",
+    "monthsAgo": "{{count}}ヶ月前",
+    "conversationCount": "会話履歴 ({{count}}件)",
+    "noHistory": "会話履歴がありません",
+    "noHistoryDesc": "選択した期間に会話の記録がありません",
+    "privacyNotice": "表示されているのは会話の要約のみです。会話の原文は保存されておらず、抽象化された要約情報のみが記録されています。"
+  },
+  "manager": {
+    "dashboard": "チームダッシュボード",
+    "department": "営業本部 第一営業部",
+    "dataNotice": "5段階のコンディション評価とトレンドのみ表示（心理詳細は非表示）",
+    "teamSize": "チーム人数",
+    "good": "良好",
+    "needsAttention": "要注意",
+    "searchPlaceholder": "メンバーを検索...",
+    "sortBy": "並び替え",
+    "sortName": "名前",
+    "sortCondition": "コンディション",
+    "sortTrend": "トレンド",
+    "tags": {
+      "stable": "安定",
+      "good": "良好",
+      "attention": "要注意",
+      "declining": "低下"
+    }
+  },
+  "managerIndividual": {
+    "title": "個人詳細",
+    "dataNotice": "コンディション指標と業務関連の抽象化データのみ表示（心理・カウンセリング情報は非表示）",
+    "infoNotice": "5段階コンディションの推移と、抽象化された要因のみが表示されます。心理的詳細や感情の生データは表示されません。",
+    "todayCondition": "今日のコンディション",
+    "conditionFactors": "コンディション要因（抽象化）",
+    "dailyTrend": "日次コンディション推移（5段階）",
+    "weeklyTrend": "週次トレンド",
+    "conditionTrend": "コンディション推移（5段階）",
+    "workFactors": "業務要因（抽象化）",
+    "comparedToLastWeek": "先週比",
+    "comparedToYesterday": "前日比",
+    "noChange": "変化なし",
+    "hiddenNotice": "0〜100の内部評価値は非表示となっています。5段階の抽象化された値のみ表示されます。",
+    "factorNotice": "これらは業務関連の抽象化された指標です。個人の心理情報は含まれません。",
+    "trendAnalysis": "過去3週間から低下傾向が見られます。業務負荷や環境の変化がないか確認することをお勧めします。",
+    "recommendedActions": "マネジメント推奨アクション",
+    "action1": "1on1ミーティングの実施を検討してください",
+    "action2": "業務の優先順位について話し合う機会を設けることを推奨します",
+    "action3": "必要に応じて、人事担当者や産業医への相談をサポートしてください",
+    "conditions": {
+      "excellent": "絶好調",
+      "good": "好調",
+      "normal": "普通",
+      "low": "やや低調",
+      "bad": "低調"
+    },
+    "factors": {
+      "workloadResponse": "業務負荷反応",
+      "attention": "注意資源",
+      "activity": "行動量",
+      "responsiveness": "応答性"
+    },
+    "levels": {
+      "high": "やや高い",
+      "stable": "安定",
+      "declining": "低下気味",
+      "normal": "普通"
+    },
+    "weeks": {
+      "week1": "第1週",
+      "week2": "第2週",
+      "week3": "第3週",
+      "thisWeek": "今週"
+    }
+  },
+  "hr": {
+    "dashboard": "人事ダッシュボード",
+    "wrAnalysis": "Work Readiness (WR) 分析",
+    "totalEmployees": "総従業員数",
+    "avgWR": "平均WR",
+    "improving": "改善傾向",
+    "needsAttention": "要注意",
+    "overview": "概要",
+    "departmentAnalysis": "部署分析",
+    "individuals": "要注意者",
+    "companyWRTrend": "全社Work Readiness 推移",
+    "lowPerformers": "要注意者リスト（WR < 50）",
+    "workReadiness": "Work Readiness",
+    "trend": "トレンド",
+    "dateRange": {
+      "1month": "直近1ヶ月",
+      "3months": "直近3ヶ月",
+      "6months": "直近6ヶ月",
+      "1year": "直近1年",
+      "all": "全期間"
+    },
+    "departments": {
+      "all": "全部署",
+      "sales": "営業本部",
+      "development": "開発部",
+      "hr": "人事部",
+      "general": "総務部",
+      "marketing": "マーケティング"
+    },
+    "runAnalysis": "分析実行",
+    "departmentWRComparison": "部署別 Work Readiness 比較",
+    "headcount": "{{count}}名",
+    "declining": "低下者",
+    "improved": "改善者",
+    "individualSearch": "個人検索",
+    "comingSoon": "個人詳細画面への遷移機能（実装予定）"
+  },
+  "hrIndividual": {
+    "permission": "Work Readiness（0〜100）の詳細値、SC類似カテゴリ要約、行動傾向の抽象化データを閲覧できます。原文や心理的詳細は表示されません。",
+    "currentWR": "現在のWork Readiness",
+    "status": {
+      "good": "良好",
+      "caution": "注意",
+      "action": "要対応"
+    },
+    "trend": "トレンド",
+    "weekAgo": "1週間前",
+    "monthAgo": "1ヶ月前",
+    "change": "変化",
+    "alerts": "アラート",
+    "rapidDecline": "急激な低下",
+    "continuousLow": "継続的な低値",
+    "wrTrend": "Work Readiness 推移（0〜100）",
+    "analysisNote": "過去2ヶ月で30ポイントの低下が見られます。早期の介入が推奨されます。",
+    "scCategorySummary": "SC類似カテゴリ要約",
+    "slackBehavior": "Slack行動傾向（抽象化）",
+    "slackPrivacy": "Slackメッセージの原文は保存・表示されません。テキストから抽出された特徴量と感情分析結果のみが抽象化された形で表示されます。",
+    "sentimentAnalysis": "感情分析（過去2週間）",
+    "positive": "ポジティブ",
+    "neutral": "ニュートラル",
+    "negative": "ネガティブ",
+    "sentimentNote": "AIによる自然言語処理で感情を推定。ネガティブ比率が通常より高めです。",
+    "emotionIndicators": "感情指標（テキスト解析）",
+    "increasing": "増加",
+    "decreasing": "減少",
+    "stable": "安定",
+    "emotionNote": "語彙選択パターンと文脈から推定された感情傾向。不安・疲労の指標が高い状態です。",
+    "textFeatures": "テキスト特徴量",
+    "behaviorMetrics": "行動メトリクス",
+    "recommendedActions": "推奨アクション",
+    "physicianRecommendations": "産業医による推奨事項",
+    "consentGiven": "本人同意済み",
+    "lastUpdated": "最終更新:",
+    "medicalFindings": "医学的所見",
+    "recommendations": "推奨事項",
+    "hrNote": "産業医の推奨事項は医学的観点からの助言です。具体的な人事施策については、本人・上司・人事で協議の上、実施してください。",
+    "urgentAction": "緊急対応推奨",
+    "mediumTermMeasures": "中期的施策",
+    "urgentActions": {
+      "action1": "直属の上司との1on1ミーティングを早急に実施",
+      "action2": "産業医面談の調整を検討（本人同意が必要）",
+      "action3": "業務負荷の見直しと再配分"
+    },
+    "mediumActions": {
+      "action1": "チーム内のサポート体制の強化",
+      "action2": "スキルアップ研修の機会提供",
+      "action3": "定期的なフォローアップ面談の設定"
+    },
+    "emotions": {
+      "anxiety": "不安",
+      "fatigue": "疲労",
+      "impatience": "焦り",
+      "isolation": "孤立感"
+    },
+    "metrics": {
+      "responseSpeed": "レスポンス速度",
+      "messageLength": "文量",
+      "postFrequency": "投稿頻度",
+      "reactions": "リアクション",
+      "negativeExpressions": "否定的表現頻度",
+      "questionRatio": "疑問文比率",
+      "immediateResponse": "即答率",
+      "lateNightPosts": "深夜投稿"
+    },
+    "metricStatus": {
+      "declining": "低下",
+      "decreasing": "減少",
+      "stable": "安定",
+      "increasing": "増加傾向",
+      "normal": "通常レベル"
+    },
+    "features": {
+      "negativeExpressions": "否定的表現頻度",
+      "questionRatio": "疑問文比率",
+      "immediateResponseRate": "即答率",
+      "lateNightPosts": "深夜投稿"
+    },
+    "featureValues": {
+      "increasing": "増加傾向",
+      "normal": "通常レベル",
+      "declining": "低下"
+    }
+  },
+  "physician": {
+    "title": "産業医画面",
+    "subtitle": "本人同意済みデータのみ閲覧可能",
+    "confidentiality": "医療守秘義務と同意管理",
+    "confidentialityDesc": "本画面に表示される情報は、従業員本人の明示的な同意を得た場合のみ閲覧可能です。カウンセリング要約、Work Readiness推移、SC類似カテゴリが表示されますが、会話の原文や詳細な心理情報は表示されません。",
+    "consentedEmployees": "同意済み従業員",
+    "highRisk": "高リスク",
+    "mediumRisk": "中リスク",
+    "lowRisk": "低リスク",
+    "consentedList": "同意済み従業員リスト",
+    "riskLevel": "リスクレベル",
+    "showAll": "全て表示",
+    "highRiskOnly": "高リスクのみ",
+    "mediumRiskOnly": "中リスクのみ",
+    "lowRiskOnly": "低リスクのみ",
+    "wrTrend": "Work Readiness推移",
+    "counselingSummary": "カウンセリング要約",
+    "sessionTypes": {
+      "cbt": "CBT",
+      "normal": "通常"
+    },
+    "scCategorySummary": "SC類似カテゴリまとめ",
+    "scCategories": {
+      "workload": "仕事の負担因子",
+      "control": "仕事のコントロール因子",
+      "supervisorSupport": "上司支援因子",
+      "relationships": "人間関係因子"
+    },
+    "scLevels": {
+      "high": "高",
+      "somewhatLow": "やや低",
+      "good": "良",
+      "medium": "中"
+    },
+    "medicalNotes": "医学的所見・推奨事項",
+    "clickToEdit": "クリックして編集",
+    "findings": "所見",
+    "findingsPlaceholder": "医学的所見を入力してください...",
+    "recommendationsPlaceholder": "推奨事項を入力してください...\n各項目を改行で区切ってください",
+    "lastEdited": "最終編集:",
+    "selectEmployee": "左のリストから従業員を選択してください",
+    "consentDate": "同意日:",
+    "expiryDate": "有効期限:",
+    "currentWR": "現在のWR"
+  },
+  "physicianConsent": {
+    "title": "産業医によるサポートのご案内",
+    "description": "あなたのWork Readinessスコアが通常より低い状態にあります。産業医による専門的なサポートを受けるため、データ閲覧への同意をお願いいたします。",
+    "alertMessage": "あなたのWork Readinessスコアが <strong>{{score}}</strong> となっており、通常よりも低い状態が確認されました。",
+    "supportOffer": "専門的なサポートのご提供",
+    "supportDesc1": "産業医によるより専門的なサポートを受けていただくことで、健康状態やワークコンディションの改善をサポートいたします。",
+    "supportDesc2": "産業医があなたの詳細なデータにアクセスすることで、より適切なアドバイスや支援を提供できるようになります。",
+    "sharedData": "共有されるデータについて",
+    "sharedDataItems": {
+      "wrTrend": "Work Readinessスコアの推移",
+      "conditionDetails": "コンディション指標の詳細",
+      "scResults": "SC類似設問の回答結果",
+      "conversationSummary": "アバター会話の要約情報"
+    },
+    "rawNotIncluded": "会話の原文は含まれません",
+    "privacyTitle": "プライバシー保護について：",
+    "privacyItems": {
+      "confidentiality": "産業医は守秘義務を負っており、情報は厳重に管理されます",
+      "noSharing": "産業医が閲覧した情報は上司や人事には共有されません",
+      "revocable": "いつでも同意を取り消すことができます",
+      "noDisadvantage": "同意しない場合でも不利益を受けることはありません"
+    },
+    "confirmQuestion": "産業医によるデータ閲覧に同意されますか？",
+    "decline": "今は同意しない",
+    "consent": "同意して産業医のサポートを受ける"
+  },
+  "admin": {
+    "title": "システム管理画面",
+    "subtitle": "CS・管理者用",
+    "stats": {
+      "totalAccounts": "総アカウント数",
+      "active": "アクティブ",
+      "dataCapacity": "データ容量",
+      "systemStatus": "システム状態",
+      "normal": "正常"
+    },
+    "tabs": {
+      "accounts": "アカウント管理",
+      "permissions": "権限管理",
+      "dataRetention": "データ保持状況",
+      "scTemplate": "SC類似テンプレート",
+      "physicianConsent": "産業医同意設定"
+    },
+    "accounts": {
+      "list": "アカウント一覧",
+      "new": "新規アカウント",
+      "email": "メールアドレス",
+      "role": "役割",
+      "roles": {
+        "employee": "従業員",
+        "manager": "上司",
+        "hr": "人事",
+        "physician": "産業医",
+        "admin": "管理者"
+      },
+      "status": {
+        "active": "アクティブ",
+        "inactive": "無効"
+      }
+    },
+    "permissions": {
+      "title": "役割別権限設定",
+      "features": {
+        "avatarDialogue": "AIアバター対話",
+        "counselingMode": "カウンセリングモード",
+        "scQuestionnaire": "SC類似設問回答",
+        "ownScore": "自分のスコア閲覧（非表示）",
+        "teamCondition": "チームメンバーの5段階コンディション閲覧",
+        "trendInfo": "トレンド情報閲覧",
+        "psychologicalInfo": "心理情報・感情ラベル（非表示）",
+        "wrDetailed": "Work Readiness（0〜100）閲覧",
+        "scCategorySummary": "SC類似カテゴリ要約閲覧",
+        "behaviorData": "行動傾向の抽象化データ閲覧",
+        "rawPsychological": "原文・心理的詳細（非表示）",
+        "counselingSummaryConsent": "カウンセリング要約閲覧（同意時のみ）",
+        "wrTrendConsent": "Work Readiness推移閲覧（同意時のみ）",
+        "scCategoryConsent": "SC類似カテゴリまとめ（同意時のみ）",
+        "rawHidden": "原文は非表示"
+      }
+    },
+    "dataRetention": {
+      "retained": "保持されるデータ",
+      "notRetained": "保存されないデータ",
+      "retainedItems": {
+        "wrScore": "Work Readiness スコア（数値のみ）",
+        "scAggregated": "SC類似設問の集計結果（カテゴリ別）",
+        "behaviorData": "行動傾向の抽象化データ",
+        "counselingSummary": "カウンセリング要約（本人・産業医のみ）"
+      },
+      "notRetainedItems": {
+        "avatarRaw": "AIアバター対話の原文",
+        "scRaw": "SC類似設問の個別回答原文",
+        "psychologicalDetail": "カウンセリング時の詳細な心理分析",
+        "voiceData": "音声データ"
+      },
+      "retentionPeriod": "データ保持期間",
+      "periods": {
+        "12months": "12ヶ月",
+        "24months": "24ヶ月",
+        "6monthsUserDeletable": "6ヶ月（本人削除可）"
+      },
+      "storageUsage": "ストレージ使用状況",
+      "storageTypes": {
+        "wrData": "Work Readinessデータ",
+        "scData": "SC類似データ",
+        "summaryData": "要約データ"
+      }
+    },
+    "scTemplate": {
+      "useTemplate": "使用するテンプレート",
+      "templates": {
+        "standard": "標準版（57問）",
+        "simple": "簡易版（23問）",
+        "custom": "カスタム版"
+      },
+      "frequency": "実施頻度",
+      "frequencies": {
+        "none": "実施しない",
+        "weekly": "毎週",
+        "biweekly": "隔週",
+        "monthly": "毎月",
+        "quarterly": "四半期ごと"
+      },
+      "currentSettings": "現在のテンプレート設定",
+      "template": "テンプレート",
+      "nextDate": "次回実施日",
+      "saveSettings": "設定を保存"
+    },
+    "physicianConsent": {
+      "title": "産業医同意ダイアログ設定",
+      "thresholdTitle": "Work Readiness閾値設定",
+      "thresholdDesc": "従業員のWork Readinessスコアがこの値未満になった場合、産業医サポートのご案内ダイアログが表示されます。",
+      "thresholdLabel": "閾値（0〜100）",
+      "belowThreshold": "未満で表示",
+      "currentSetting": "現在の設定",
+      "redisplayTitle": "再表示期間設定",
+      "redisplayDesc": "従業員が「今は同意しない」を選択した場合、次にダイアログを表示するまでの期間を設定します。",
+      "redisplayDays": "再表示までの日数",
+      "daysLater": "日後",
+      "examples": "設定例と推奨値",
+      "standard": "標準設定",
+      "standardDesc": "一般的な企業向け",
+      "standardValue": "閾値: 50 / 再表示: 7日",
+      "proactive": "積極的サポート",
+      "proactiveDesc": "早期介入を重視",
+      "proactiveValue": "閾値: 60 / 再表示: 3日",
+      "conservative": "控えめサポート",
+      "conservativeDesc": "従業員の自主性を尊重",
+      "conservativeValue": "閾値: 40 / 再表示: 14日",
+      "summary": "現在の設定サマリー",
+      "displayCondition": "ダイアログ表示条件",
+      "wrBelow": "Work Readiness < {{value}}",
+      "redisplayTiming": "再表示タイミング",
+      "afterDecline": "拒否後 {{days}}日",
+      "lastUpdated": "最終更新日",
+      "resetDefault": "デフォルトに戻す"
+    }
+  },
+  "scGroupAnalysis": {
+    "title": "SC類似：集団分析",
+    "subtitle": "組織全体のストレスチェック分析",
+    "notice": "個人を特定できない形で集計されたデータです。組織改善と職場環境向上のための参考データとしてご活用ください。",
+    "tabs": {
+      "comparison": "部署比較",
+      "trends": "推移分析",
+      "initiatives": "施策効果"
+    },
+    "comparison": {
+      "radarTitle": "部署別カテゴリスコア（レーダーチャート）",
+      "barTitle": "カテゴリ別部署比較（棒グラフ）",
+      "highRiskDepts": "高リスク部署",
+      "goodDepts": "良好な部署",
+      "status": {
+        "attention": "要注意",
+        "caution": "注意",
+        "good": "良好",
+        "stable": "安定"
+      },
+      "deptDescriptions": {
+        "salesHighLoad": "仕事の負担が高く、ストレス反応も高い傾向",
+        "devModerateLoad": "業務負荷とストレス反応がやや高い",
+        "hrBalanced": "全体的にバランスが取れた状態",
+        "generalSupport": "上司・同僚の支援が充実"
+      }
+    },
+    "trends": {
+      "monthlyTitle": "月次推移（全社平均）",
+      "categories": {
+        "workload": "仕事の負担",
+        "supervisorSupport": "上司の支援",
+        "stressResponse": "ストレス反応"
+      },
+      "monthChange": "前月比 {{change}}pt",
+      "statusLabels": {
+        "somewhatHigh": "やや高い水準",
+        "improving": "改善傾向",
+        "needsAttention": "要注意"
+      }
+    },
+    "initiatives": {
+      "title": "施策実施前後のWR変化",
+      "before": "実施前",
+      "after": "実施後",
+      "items": {
+        "oneOnOne": "1on1強化",
+        "flextime": "フレックス導入",
+        "training": "研修プログラム",
+        "mentor": "メンター制度"
+      },
+      "beforeWR": "実施前WR",
+      "afterWR": "実施後WR",
+      "change": "変化",
+      "effective": "効果あり：継続実施を推奨",
+      "nextActions": "推奨される次のアクション",
+      "actions": {
+        "expand": "効果的だった施策の展開",
+        "expandDesc": "メンター制度と研修プログラムの他部署への展開を検討",
+        "additional": "追加施策の検討",
+        "additionalDesc": "業務負荷が高い部署へのリソース配分見直し",
+        "monitor": "継続的なモニタリング",
+        "monitorDesc": "3ヶ月ごとのSC実施と効果測定の継続"
+      }
+    }
+  },
+  "mockData": {
+    "conversations": {
+      "conv1Summary": "プロジェクトの進捗について相談。新しいタスクの優先順位付けとスケジュール調整について対話。",
+      "conv1Mood": "普通",
+      "conv1Tags": ["業務", "プロジェクト管理"],
+      "conv2Summary": "チームメンバーとのコミュニケーションについて。円滑な協働のためのアプローチを検討。",
+      "conv2Mood": "良好",
+      "conv2Tags": ["コミュニケーション", "チームワーク"],
+      "conv3Summary": "今週のタスクの振り返り。達成できたことと改善点を整理。",
+      "conv3Mood": "普通",
+      "conv3Tags": ["振り返り", "業務"],
+      "conv4Summary": "長期的なキャリアプランについて対話。スキルアップの方向性を検討。",
+      "conv4Mood": "前向き",
+      "conv4Tags": ["キャリア", "自己成長"],
+      "conv5Summary": "休暇後の業務復帰について。リフレッシュした気持ちで取り組めるよう整理。",
+      "conv5Mood": "良好",
+      "conv5Tags": ["休暇", "ワークライフバランス"],
+      "conv6Summary": "四半期の目標達成状況について振り返り。次のステップを計画。",
+      "conv6Mood": "普通",
+      "conv6Tags": ["目標設定", "振り返り"]
+    },
+    "medicalFindings": "適応障害の可能性を考慮。継続的な経過観察が必要。",
+    "recommendations": {
+      "rec1": "2週間後の再面談を設定",
+      "rec2": "必要に応じて専門医への紹介を検討",
+      "rec3": "業務調整について人事・上司と連携",
+      "rec4": "睡眠衛生指導の実施"
+    },
+    "counselingSessions": {
+      "session1Date": "2024/11/15 セッション",
+      "session1Summary": "業務負荷に関する認知の歪みを扱いました。「完璧でなければならない」という思考パターンに気づき、現実的な目標設定について話し合いました。",
+      "session2Date": "2024/11/10 セッション",
+      "session2Summary": "睡眠の質の低下と集中力の問題について相談がありました。生活リズムの見直しと、ストレス対処法について話し合いました。"
+    },
+    "slackBehavior": {
+      "responseSpeedDesc": "平均応答時間が2時間→4時間に延長",
+      "messageLengthDesc": "平均文字数が50%減少",
+      "postFrequencyDesc": "1日平均15回→8回に減少",
+      "reactionsDesc": "絵文字使用は通常レベル",
+      "negativeExpressionsDesc": "「難しい」「厳しい」などの表現が1.5倍に",
+      "questionRatioDesc": "質問や確認の頻度は正常範囲",
+      "immediateResponseDesc": "即座に回答する割合が60%→35%に減少",
+      "lateNightPostsDesc": "22時以降の投稿が2倍に増加"
+    },
+    "tags": {
+      "work": "業務",
+      "projectManagement": "プロジェクト管理",
+      "communication": "コミュニケーション",
+      "teamwork": "チームワーク",
+      "reflection": "振り返り",
+      "career": "キャリア",
+      "selfDevelopment": "自己成長",
+      "vacation": "休暇",
+      "workLifeBalance": "ワークライフバランス",
+      "goalSetting": "目標設定"
+    },
+    "moods": {
+      "normal": "普通",
+      "good": "良好",
+      "positive": "前向き"
+    }
+  },
+  "scCategories": {
+    "workplaceEnvironment": "職場環境因子",
+    "interpersonalRelations": "人間関係因子",
+    "workBurden": "仕事の負担因子",
+    "workControl": "仕事のコントロール因子",
+    "supervisorSupport": "上司支援因子",
+    "colleagueSupport": "同僚の支援"
+  },
+  "stressFactors": {
+    "workBurden": "仕事の負担",
+    "workControl": "仕事のコントロール",
+    "supervisorSupport": "上司の支援",
+    "colleagueSupport": "同僚の支援",
+    "stressResponse": "ストレス反応"
+  }
+}
