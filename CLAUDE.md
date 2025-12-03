@@ -12,29 +12,40 @@ pnpm build      # Build to ./build directory
 
 ## Architecture
 
-This is a React 18 + Vite frontend for an LLM-powered employee counseling/wellness application (Japanese UI). The app has no backend connection - it's a UI prototype with mock data and simulated responses.
+This is a React 18 + Vite frontend for an LLM-powered employee counseling/wellness application. The app has no backend connection - it's a UI prototype with mock data and simulated responses.
 
-### User Roles and Screens
-The app implements role-based navigation from a single `App.tsx` state machine:
+### Navigation State Machine
+All navigation is controlled via `App.tsx` with TypeScript types:
+- `UserRole`: `employee | manager | hr | physician | admin`
+- `Screen`: `login | employee-home | avatar-dialogue | counseling | sc-questionnaire | conversation-history | manager-dashboard | manager-individual | hr-dashboard | hr-individual | sc-analysis | physician | admin`
+
+Feature components receive navigation callbacks as props (e.g., `onBack`, `onNavigate`). All state is lifted to `App.tsx`.
+
+### User Roles
 - **Employee**: Home dashboard, avatar dialogue (normal chat), counseling mode (mental health), SC questionnaire, conversation history
 - **Manager**: Team dashboard, individual employee views
 - **HR**: Department dashboard, individual views, SC group analysis
 - **Physician**: Patient view with consented data access
 - **Admin**: System configuration (consent thresholds, reminder intervals)
 
+### i18n / Localization
+Language controlled by `VITE_LANG` env variable (`ja` or `en`, default: `en`). Translation files in `src/i18n/locales/`. Use the `useTranslation` hook from `react-i18next`:
+```tsx
+const { t } = useTranslation();
+t('common.defaultUsername')
+```
+
 ### Key Patterns
 
 **Path Alias**: Use `@/` to import from `src/` (configured in vite.config.ts)
 
-**UI Components**: Located in `src/components/ui/` - these are shadcn/ui-style components built on Radix UI primitives. Use these for consistent styling.
+**UI Components**: Located in `src/components/ui/` - shadcn/ui-style components built on Radix UI primitives. Use these for consistent styling.
 
 **Utility Function**: Use `cn()` from `@/components/ui/utils` for conditional Tailwind class merging:
 ```tsx
 import { cn } from '@/components/ui/utils';
 cn('base-class', condition && 'conditional-class')
 ```
-
-**Component Structure**: Feature components in `src/components/` receive navigation callbacks as props (e.g., `onBack`, `onNavigate`). State is lifted to `App.tsx`.
 
 ### Important Business Logic
 - **Physician Consent Flow**: When employee Work Readiness score falls below configurable threshold, a consent dialog prompts for physician data sharing
