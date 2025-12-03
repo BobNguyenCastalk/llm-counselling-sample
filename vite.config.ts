@@ -5,7 +5,7 @@
 
   export default defineConfig({
     plugins: [react()],
-    base: '/llm-counselling-sample/',
+    base: process.env.VITE_BASE_PATH || '/llm-counselling-sample/',
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
