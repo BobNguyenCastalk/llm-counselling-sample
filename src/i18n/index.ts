@@ -4,7 +4,7 @@ import ja from './locales/ja.json';
 import en from './locales/en.json';
 
 // Language controlled by VITE_LANG env variable (default: 'ja')
-const lang = import.meta.env.VITE_LANG || 'ja';
+const lang = import.meta.env.VITE_LANG || 'en';
 
 i18n
   .use(initReactI18next)
