@@ -51,3 +51,10 @@ cn('base-class', condition && 'conditional-class')
 - **Physician Consent Flow**: When employee Work Readiness score falls below configurable threshold, a consent dialog prompts for physician data sharing
 - **SC Questionnaire Scheduling**: Configurable frequency (weekly/biweekly/monthly/quarterly) with reminder dialogs and decline cooldowns
 - **Counseling vs Normal Dialogue**: Two distinct avatar interaction modes with different UI treatments
+
+## Active Technologies
+- TypeScript (strict mode) with React 18 + React 18, Vite, Tailwind CSS, Radix UI, react-i18next, Recharts (for charts) (001-mobile-first-refactor)
+- N/A (UI prototype with hardcoded mock data) (001-mobile-first-refactor)
+
+## Recent Changes
+- 001-mobile-first-refactor: Added TypeScript (strict mode) with React 18 + React 18, Vite, Tailwind CSS, Radix UI, react-i18next, Recharts (for charts)
